@@ -10,48 +10,50 @@ export const Pricing = () => {
   const t = useTranslations('Pricing');
 
   return (
-    <Section
-      subtitle={t('section_subtitle')}
-      title={t('section_title')}
-      description={t('section_description')}
-    >
-      <PricingInformation
-        buttonList={{
-          [PLAN_ID.FREE]: (
-            <Link
-              className={buttonVariants({
-                size: 'sm',
-                className: 'mt-5 w-full',
-              })}
-              href="/sign-up"
-            >
-              {t('button_text')}
-            </Link>
-          ),
-          [PLAN_ID.PREMIUM]: (
-            <Link
-              className={buttonVariants({
-                size: 'sm',
-                className: 'mt-5 w-full',
-              })}
-              href="/sign-up"
-            >
-              {t('button_text')}
-            </Link>
-          ),
-          [PLAN_ID.ENTERPRISE]: (
-            <Link
-              className={buttonVariants({
-                size: 'sm',
-                className: 'mt-5 w-full',
-              })}
-              href="/sign-up"
-            >
-              {t('button_text')}
-            </Link>
-          ),
-        }}
-      />
-    </Section>
+    <div id="programs">
+      <Section
+        subtitle={t('section_subtitle')}
+        title={t('section_title')}
+        description={t('section_description')}
+      >
+        <PricingInformation
+          buttonList={{
+            [PLAN_ID.FREE]: (
+              <Link
+                className={buttonVariants({
+                  size: 'sm',
+                  className: 'mt-5 w-full',
+                })}
+                href="/sign-up"
+              >
+                {t('button_text')}
+              </Link>
+            ),
+            [PLAN_ID.PREMIUM]: (
+              <Link
+                className={buttonVariants({
+                  size: 'sm',
+                  className: 'mt-5 w-full',
+                })}
+                href="/sign-up"
+              >
+                {t('button_text')}
+              </Link>
+            ),
+            [PLAN_ID.ENTERPRISE]: (
+              <Link
+                className={buttonVariants({
+                  size: 'sm',
+                  className: 'mt-5 w-full',
+                })}
+                href="/sign-up"
+              >
+                {t('button_text')}
+              </Link>
+            ),
+          }}
+        />
+      </Section>
+    </div>
   );
 };

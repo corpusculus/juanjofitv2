@@ -94,10 +94,6 @@ export const Footer = () => {
         </li>
 
         <li>
-          <Link href="/sign-up">{t('blog')}</Link>
-        </li>
-
-        <li>
           <Link href="/sign-up">{t('community')}</Link>
         </li>
 
